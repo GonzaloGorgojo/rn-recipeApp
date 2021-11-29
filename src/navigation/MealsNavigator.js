@@ -5,9 +5,15 @@ import CategoryMealScreen from "../screens/CategoryMealsScreen";
 import MealDetailScreen from "../screens/MealDetailScreen";
 
 const MealsNavigator = createStackNavigator({
-  Categories: CategoriesScreen,
-  Categorymeals: CategoryMealScreen,
-  MealDetail: MealDetailScreen,
+  Categories: {
+    screen: CategoriesScreen,
+  },
+  Categorymeals: {
+    screen: CategoryMealScreen,
+  },
+  MealDetail: {
+    screen: MealDetailScreen,
+  },
 });
 
 export default createAppContainer(MealsNavigator);
